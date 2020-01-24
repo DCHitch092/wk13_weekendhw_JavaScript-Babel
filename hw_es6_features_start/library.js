@@ -18,10 +18,17 @@ class Library {
   // In library.js refactor the `printInventory` method using destructuring.
 
   printInventory(){
-    this.books.forEach((book) => {
-      console.log(`${book.title} by ${book.author}`);
-    })
+    for (const {title: t, author: a} of books) {
+      console.log(`${t} by ${a}`)
+    }
+    // this.books.forEach((book) => {
+    //   console.log(`${book.title} by ${book.author}`);
+    // })
   }
+
+// //
+//   for (const {name: n, family: {father: f}} of people) {
+//   console.log('Name: ' + n + ', Father: ' + f);
 
 };
 
