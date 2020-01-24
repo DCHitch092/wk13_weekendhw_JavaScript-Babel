@@ -1,6 +1,6 @@
 const assert = require('assert');
 const Library = require('../library');
-const Book = require('../book');
+import Book from '../book.js';
 
 describe('Library', function () {
   let library;
