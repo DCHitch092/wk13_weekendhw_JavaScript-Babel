@@ -1,5 +1,6 @@
+import Book from '../book.js';
 const assert = require('assert');
-const Book = require('../book');
+// const Book = require('../book');
 
 describe('Book', function () {
   let book;

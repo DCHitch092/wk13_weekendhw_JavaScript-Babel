@@ -1,5 +1,7 @@
-const Library = function (books = []) {
-  this.books = books;
+class Library {
+  constructor(books = []){
+    this.books = books;
+  }
 };
 
 Library.prototype.bookCount = function () {
